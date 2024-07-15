@@ -1,0 +1,3 @@
+dev_infra/db
+node_server/node_modules
+rust_server/target
