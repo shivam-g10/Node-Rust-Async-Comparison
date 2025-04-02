@@ -43,7 +43,8 @@ async fn main() {
     dotenvy::dotenv().expect(".env file not found");
     let database_url = std::env::var("DATABASE_URL").expect("DATABASE_URL must be set");
     let pool = match PgPoolOptions::new()
-        .max_connections(10)
+        .max_connections(30)
+        .min_connections(10)
         .connect(&database_url)
         .await
     {

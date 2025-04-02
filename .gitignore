@@ -1,3 +1,9 @@
 dev_infra/db
 node_server/node_modules
 rust_server/target
+go_server/*.exe
+go_server/bin
+dev_infra/postgres_data
+# Ignore all .env files
+*.env
+
